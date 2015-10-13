@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>查询所有用户</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="css/matrix-style.css" />
+  <link rel="stylesheet" href="css/matrix-media.css" />
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.gritter.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-google-400.css">
+  <style type="text/css">
+  .widget-box form{
+    padding:10px 10px; 
+  }
+  .widget-box form select{
+    width:100px;
+  }
+  .widget-box form .btn{
+    margin-bottom:10px;
+  }
+  </style>
+</head>
+
+<body>
+  <!--Header-part-->
+  <div id="header">
+    <h3><a href="index.html">US后台管理系统</a></h3>
+  </div>
+  <!--close-Header-part-->
+  <!--top-Header-menu-->
+  <div id="user-nav" class="navbar navbar-inverse">
+    <ul class="nav">
+      <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎用户</span><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><i class="icon-user"></i>个人中心</a></li>
+          <li class="divider"></li>
+          <li><a href="#"><i class="icon-check"></i>我的任务</a></li>
+          <li class="divider"></li>
+          <li><a href="login.html"><i class="icon-key"></i>退出登录</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu-messages">
+        <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+          <i class="icon icon-envelope"></i>
+          <span class="text">信息</span>
+          <span class="label label-important">5</span>
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i>新消息</a></li>
+          <li class="divider"></li>
+          <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i>收件箱</a></li>
+          <li class="divider"></li>
+          <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i>发件箱</a></li>
+          <li class="divider"></li>
+          <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i>垃圾箱</a></li>
+        </ul>
+      </li>
+      <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+      <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">退出登录</span></a></li>
+    </ul>
+  </div>
+  <!--close-top-Header-menu-->
+  <!--start-top-serch-->
+  <div id="search">
+    <input type="text" placeholder="Search here..." />
+    <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+  </div>
+  <!--close-top-serch-->
+  <!--sidebar-menu-->
+  <div id="sidebar">
+    <a href="#" class="visible-phone"><i class="icon icon-home"></i>menu</a>
+    <ul>
+      <li><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a> </li>
+      <li class="submenu"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
+        <ul>
+          <li><a href="college-joke.html">校园八卦</a></li>
+          <li><a href="#">校园风云</a></li>
+          <li><a href="#">校园资讯</a></li>
+          <li><a href="#">校园活动</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>校园周边</span> <span class="label label-important">3</span></a>
+        <ul>
+          <li><a href="#">口碑商</a></li>
+          <li><a href="#">便生活</a></li>
+          <li><a href="#">有活动</a></li>
+        </ul>
+      </li>
+      <li class="submenu active"> <a href="#"><i class="icon icon-user-md"></i> <span>用户</span> <span class="label label-important">3</span></a>
+        <ul>
+          <li><a href="find-allusers.html">查询所有用户</a></li>
+          <li><a href="#">查询用户订单</a></li>
+          <li><a href="add-message.html">添加消息给用户</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>商城</span> <span class="label label-important">2</span></a>
+        <ul>
+          <li><a href="#">添加商品</a></li>
+          <li><a href="#">查询商品</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>留言板</span> <span class="label label-important">1</span></a>
+        <ul>
+          <li><a href="#">查看留言板</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
+        <ul>
+          <li><a href="add-article.html">添加文章</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--sidebar-menu-->
+  <!--main-container-part-->
+  <div id="content">
+    <!--breadcrumbs面包屑导航-->
+    <div id="content-header">
+      <div id="breadcrumb">
+        <a href="index.html" title="返回主页" class="tip-bottom"><i class="icon-home"></i> Home</a>
+      </div>
+      <h1>查找所有用户</h1>
+    </div>
+    <!--End-breadcrumbs-->
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span12">
+          <div class="widget-box">
+            <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
+              <h5>所有用户</h5>
+            </div>
+            <form action="" method="POST" role="form">
+              <div class="form-group">
+                <select name="" id="input" class="form-control" required="required">
+                  <option value="用户名">用户名</option>
+                </select>
+                <input type="text" class="form-control" id="" placeholder="输入查询内容">
+                <button type="submit" class="btn btn-primary">查询</button>
+              </div>
+            </form>
+            <div class="widget-content nopadding">
+              <table class="table table-bordered data-table">
+                <thead>
+                  <tr>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>手机号</th>
+                    <th>性别</th>
+                    <th>创建时间</th>
+                    <th>上一次登录时间</th>
+                    <th>登录ip</th>
+                    <th>昵称</th>
+                    <th>用户分组</th>
+                    <th>权限</th>
+                    <th>操作</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                  <tr class="gradeX">
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
+                    <td>2015-10-05 11:51:19</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
+                    <td>
+                      <a href="javascript:;">更改权限</a>
+                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <div class="pagination alternate text-center">
+                <ul>
+                  <li class="disabled"><a href="#">首页</a></li>
+                  <li class="active"> <a href="#">上一页</a> </li>
+                  <li> <a href="#">2</a> </li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">4</a></li>
+                  <li><a href="#">下一页</a></li>
+                  <li><a href="#">尾页</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--end-main-container-part-->
+  <!--Footer-part-->
+  <div class="row-fluid">
+    <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in/">Themedesigner.in</a> </div>
+  </div>
+  <!--end-Footer-part-->
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/jquery.ui.custom.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/jquery.uniform.js"></script> 
+  <script src="js/select2.min.js"></script> 
+  <script src="js/matrix.js"></script> 
+  <script src="js/matrix.tables.js"></script>
+</body>
+
+</html>

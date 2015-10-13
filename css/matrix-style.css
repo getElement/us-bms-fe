@@ -1590,11 +1590,4 @@ div.dataTables_wrapper .ui-widget-header {
 }
 
 /*私有样式*/
-@media (min-width: 1200px){
-	#content h2{
-		padding-left: 20px;
-	}
-	.row-fluid{
-	    padding-left: 20px;
-	}	
-}
+
