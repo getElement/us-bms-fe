@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>校园八卦</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
+  <link rel="stylesheet" href="css/matrix-style.css" />
+  <link rel="stylesheet" href="css/matrix-media.css" />
+  <link rel="stylesheet" href="css/uniform.css" />
+  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.gritter.css" />
+  <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
+  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-google-400.css" />
+</head>
+
+<body>
+  <!--Header-part-->
+  <div id="header">
+    <h3><a href="index.html">US后台管理系统</a></h3>
+  </div>
+  <!--close-Header-part-->
+  <!--top-Header-menu-->
+  <div id="user-nav" class="navbar navbar-inverse">
+    <ul class="nav">
+      <li class="dropdown" id="profile-messages"><a title="" href="#" data-toggle="dropdown" data-target="#profile-messages" class="dropdown-toggle"><i class="icon icon-user"></i>  <span class="text">欢迎用户</span><b class="caret"></b></a>
+        <ul class="dropdown-menu">
+          <li><a href="#"><i class="icon-user"></i>个人中心</a></li>
+          <li class="divider"></li>
+          <li><a href="#"><i class="icon-check"></i>我的任务</a></li>
+          <li class="divider"></li>
+          <li><a href="login.html"><i class="icon-key"></i>退出登录</a></li>
+        </ul>
+      </li>
+      <li class="dropdown" id="menu-messages">
+        <a href="#" data-toggle="dropdown" data-target="#menu-messages" class="dropdown-toggle">
+          <i class="icon icon-envelope"></i>
+          <span class="text">信息</span>
+          <span class="label label-important">5</span>
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu">
+          <li><a class="sAdd" title="" href="#"><i class="icon-plus"></i>新消息</a></li>
+          <li class="divider"></li>
+          <li><a class="sInbox" title="" href="#"><i class="icon-envelope"></i>收件箱</a></li>
+          <li class="divider"></li>
+          <li><a class="sOutbox" title="" href="#"><i class="icon-arrow-up"></i>发件箱</a></li>
+          <li class="divider"></li>
+          <li><a class="sTrash" title="" href="#"><i class="icon-trash"></i>垃圾箱</a></li>
+        </ul>
+      </li>
+      <li class=""><a title="" href="#"><i class="icon icon-cog"></i> <span class="text">Settings</span></a></li>
+      <li class=""><a title="" href="login.html"><i class="icon icon-share-alt"></i> <span class="text">退出登录</span></a></li>
+    </ul>
+  </div>
+  <!--close-top-Header-menu-->
+  <!--start-top-serch-->
+  <div id="search">
+    <input type="text" placeholder="Search here..." />
+    <button type="submit" class="tip-bottom" title="Search"><i class="icon-search icon-white"></i></button>
+  </div>
+  <!--close-top-serch-->
+  <!--sidebar-menu-->
+  <div id="sidebar">
+    <a href="#" class="visible-phone"><i class="icon icon-home"></i>menu</a>
+    <ul>
+      <li><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a> </li>
+      <li class="submenu active"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
+        <ul>
+          <li><a href="college-joke.html">校园八卦</a></li>
+          <li><a href="#">校园风云</a></li>
+          <li><a href="#">校园资讯</a></li>
+          <li><a href="#">校园活动</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>校园周边</span> <span class="label label-important">3</span></a>
+        <ul>
+          <li><a href="#">口碑商</a></li>
+          <li><a href="#">便生活</a></li>
+          <li><a href="#">有活动</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-user-md"></i> <span>用户</span> <span class="label label-important">1</span></a>
+        <ul>
+          <li><a href="#">查询所有用户</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>商城</span> <span class="label label-important">2</span></a>
+        <ul>
+          <li><a href="#">添加商品</a></li>
+          <li><a href="#">查询商品</a></li>
+        </ul>
+      </li>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>留言板</span> <span class="label label-important">1</span></a>
+        <ul>
+          <li><a href="#">查看留言板</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  <!--sidebar-menu-->
+  <!--main-container-part-->
+  <div id="content">
+    <!--breadcrumbs面包屑导航-->
+    <div id="content-header">
+      <div id="breadcrumb"> 
+        <a href="index.html" title="回到主页" class="tip-bottom"><i class="icon-home"></i>主页</a> 
+        <a href="#" title="添加文章" class="tip-bottom" class="current">添加文章</a> 
+      </div>
+    </div>
+    <!--End-breadcrumbs-->
+    <h2>添加文章</h2>
+    <hr>
+    <div class="row-fluid">
+      <div class="span6">
+        <div class="widget-box">
+          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
+            <h5>添加文章详情</h5>
+          </div>
+          <div class="widget-content nopadding">
+            <form action="#" method="get" class="form-horizontal">
+              <div class="control-group">
+                <label class="control-label">标题 :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="标题" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">作者 :</label>
+                <div class="controls">
+                  <input type="text" class="span11" placeholder="作者" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">标签类型</label>
+                <div class="controls">
+                  <input type="text"  class="span11" placeholder="Enter Password"  />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">文章分类</label>
+                <div class="controls">
+                  <select >
+                    <option>--请选择--</option>
+                    <option>校园资讯</option>
+                    <option>校园风云</option>
+                    <option>校园八卦</option>
+                    <option>校园活动</option>
+                    <option>口碑商</option>
+                    <option>便生活</option>
+                    <option>有活动</option>
+                  </select>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">文章类型:</label>
+                <div class="controls">
+                  <input type="text" class="span11" />
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">文章内容</label>
+                <div class="controls">
+                  <textarea class="span11" ></textarea>
+                </div>
+              </div>
+              <div class="control-group">
+                <label class="control-label">上传文件</label>
+                <div class="controls">
+                  <input type="file" />
+                </div>
+                <div class="controls">
+                  <button class="btn btn-success">增加一行</button>
+                  <input type="submit" value="上传">
+                </div>
+              </div>
+              <div class="form-actions text-right">
+                <button type="submit" class="btn btn-success">Save</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+  <!--end-main-container-part-->
+  <!--Footer-part-->
+  <div class="row-fluid">
+    <div id="footer" class="span12"> 2013 &copy; Matrix Admin. Brought to you by <a href="http://themedesigner.in/">Themedesigner.in</a> </div>
+  </div>
+  <!--end-Footer-part-->
+  <script src="js/jquery.min.js"></script> 
+  <script src="js/jquery.ui.custom.js"></script> 
+  <script src="js/bootstrap.min.js"></script> 
+  <script src="js/jquery.uniform.js"></script> 
+  <script src="js/select2.min.js"></script> 
+  <script src="js/jquery.dataTables.min.js"></script> 
+  <script src="js/matrix.js"></script> 
+  <script src="js/jquery.peity.min.js"></script> 
+</body>
+
+</html>
