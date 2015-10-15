@@ -605,6 +605,15 @@ hr{ border-top-color:#dadada;}
 .widget-box.collapsible .collapse.in .widget-content {
 	border-bottom: 1px solid #CDCDCD;
 }
+.widget-box form{
+  padding:10px 10px; 
+}
+.widget-box form select{
+  width:100px;
+}
+.widget-box form .btn{
+  margin-bottom:10px;
+}
 .recent-posts, .recent-comments, .recent-users {
 	margin: 0;
 	padding: 0;

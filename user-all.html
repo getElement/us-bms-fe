@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>校园八卦</title>
+  <title>查询所有用户</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
-  <link rel="stylesheet" href="css/uniform.css" />
-  <link rel="stylesheet" href="css/select2.css" />
   <link rel="stylesheet" href="css/matrix-style.css" />
   <link rel="stylesheet" href="css/matrix-media.css" />
   <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="css/jquery.gritter.css" />
   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-google-400.css">
-  <link rel="stylesheet" type="text/css" href="css/college-joke.css">
 </head>
 
 <body>
@@ -66,22 +64,22 @@
     <a href="#" class="visible-phone"><i class="icon icon-home"></i>menu</a>
     <ul>
       <li><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a> </li>
-      <li class="submenu active"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
+      <li class="submenu"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
         <ul>
           <li><a href="college-joke.html">校园八卦</a></li>
-          <li><a href="college-wind.html">校园风云</a></li>
+          <li><a href="#">校园风云</a></li>
           <li><a href="#">校园资讯</a></li>
           <li><a href="#">校园活动</a></li>
         </ul>
       </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>校园周边</span> <span class="label label-important">3</span></a>
         <ul>
-          <li><a href="business.html">口碑商</a></li>
-          <li><a href="easy.html">便生活</a></li>
-          <li><a href="activity.html">有活动</a></li>
+          <li><a href="#">口碑商</a></li>
+          <li><a href="#">便生活</a></li>
+          <li><a href="#">有活动</a></li>
         </ul>
       </li>
-      <li class="submenu"> <a href="#"><i class="icon icon-user-md"></i> <span>用户</span> <span class="label label-important">3</span></a>
+      <li class="submenu active"> <a href="#"><i class="icon icon-user-md"></i> <span>用户</span> <span class="label label-important">3</span></a>
         <ul>
           <li><a href="find-allusers.html">查询所有用户</a></li>
           <li><a href="#">查询用户订单</a></li>
@@ -99,7 +97,7 @@
           <li><a href="#">查看留言板</a></li>
         </ul>
       </li>
-      <li class="submenu"> <a href="javascript:;"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
+      <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
         <ul>
           <li><a href="add-article.html">添加文章</a></li>
         </ul>
@@ -109,18 +107,20 @@
   <!--sidebar-menu-->
   <!--main-container-part-->
   <div id="content">
+    <!--breadcrumbs面包屑导航-->
     <div id="content-header">
-      <div id="breadcrumb"> <a href="index.html" title="回到主页" class="tip-bottom"><i class="icon-home"></i>主页</a> <a href="college-joke.html" class="current">校园八卦</a> </div>
-      <h1>校园八卦</h1>
+      <div id="breadcrumb">
+        <a href="index.html" title="返回主页" class="tip-bottom"><i class="icon-home"></i> Home</a>
+      </div>
+      <h1>查找所有用户</h1>
     </div>
-
+    <!--End-breadcrumbs-->
     <div class="container-fluid">
-      <hr>
       <div class="row-fluid">
         <div class="span12">
           <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-              <h5>八卦小文</h5>
+              <h5>所有用户</h5>
             </div>
             <form action="" method="POST" role="form">
               <div class="form-group">
@@ -135,134 +135,137 @@
               <table class="table table-bordered data-table">
                 <thead>
                   <tr>
-                    <th>作者</th>
-                    <th>标题</th>
-                    <th>内容</th>
-                    <th>浏览次数</th>
-                    <th>发表时间</th>
-                    <th>标签</th>
+                    <th>用户名</th>
+                    <th>邮箱</th>
+                    <th>手机号</th>
+                    <th>性别</th>
+                    <th>创建时间</th>
+                    <th>上一次登录时间</th>
+                    <th>登录ip</th>
+                    <th>昵称</th>
+                    <th>用户分组</th>
+                    <th>权限</th>
                     <th>操作</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="gradeX">
-                    <td>俞常爽</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">3</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>俞常爽</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">3</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
+                    <td>13029803355</td>
+                    <td>13029803355.qq.com</td>
+                    <td>13029803355</td>
+                    <td>male</td>
+                    <td class="center">2015-9-27 14:16:34</td>
                     <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
+                    <td>127.1.1.1</td>
+                    <td>张先生</td>
+                    <td>user</td>
+                    <td>1,1,1</td>
                     <td>
-                      <a href="article-detail.html">详情</a>
+                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
-                    <td>
-                      <a href="article-detail.html">详情</a>
-                      <a href="javascript:;">删除</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
-                    <td>
-                      <a href="article-detail.html">详情</a>
-                      <a href="javascript:;">删除</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>yancey</td>
-                    <td>us后台管理系统搭建</td>
-                    <td><strong>今日完成后台管理系统搭建今日完成后台管理系统搭建</strong></td>
-                    <td class="center">4</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>八卦</td>
-                    <td>
-                      <a href="article-detail.html">详情</a>
-                      <a href="javascript:;">删除</a>
+                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                 </tbody>
@@ -284,6 +287,7 @@
         </div>
       </div>
     </div>
+
   </div>
   <!--end-main-container-part-->
   <!--Footer-part-->

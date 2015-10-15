@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>查询所有用户</title>
+  <title>留言板</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
@@ -11,17 +11,6 @@
   <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
   <link rel="stylesheet" href="css/jquery.gritter.css" />
   <link rel="stylesheet" type="text/css" href="font-awesome/css/font-google-400.css">
-  <style type="text/css">
-  .widget-box form{
-    padding:10px 10px; 
-  }
-  .widget-box form select{
-    width:100px;
-  }
-  .widget-box form .btn{
-    margin-bottom:10px;
-  }
-  </style>
 </head>
 
 <body>
@@ -105,7 +94,7 @@
       </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>留言板</span> <span class="label label-important">1</span></a>
         <ul>
-          <li><a href="#">查看留言板</a></li>
+          <li><a href="see-notes.html">查看留言板</a></li>
         </ul>
       </li>
       <li class="submenu"> <a href="#"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
@@ -123,7 +112,7 @@
       <div id="breadcrumb">
         <a href="index.html" title="返回主页" class="tip-bottom"><i class="icon-home"></i> Home</a>
       </div>
-      <h1>查找所有用户</h1>
+      <h1>查看留言板</h1>
     </div>
     <!--End-breadcrumbs-->
     <div class="container-fluid">
@@ -131,7 +120,7 @@
         <div class="span12">
           <div class="widget-box">
             <div class="widget-title"> <span class="icon"><i class="icon-th"></i></span>
-              <h5>所有用户</h5>
+              <h5>查看留言板</h5>
             </div>
             <form action="" method="POST" role="form">
               <div class="form-group">
@@ -146,137 +135,58 @@
               <table class="table table-bordered data-table">
                 <thead>
                   <tr>
+                    <th>全选</th>
                     <th>用户名</th>
-                    <th>邮箱</th>
-                    <th>手机号</th>
-                    <th>性别</th>
-                    <th>创建时间</th>
-                    <th>上一次登录时间</th>
-                    <th>登录ip</th>
-                    <th>昵称</th>
-                    <th>用户分组</th>
-                    <th>权限</th>
-                    <th>操作</th>
+                    <th>用户ip</th>
+                    <th>note id</th>
+                    <th>留言内容</th>
+                    <th>时间</th>
+                    <th>删除操作</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
+                    <td><input type="radio"></td>
+                    <td>1</td>
+                    <td>192.168.1.1</td>
+                    <td>1</td>
+                    <td>测试留言墙</td>
+                    <td>2015-10-13 20:25:37</td>
                     <td>
-                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
+                    <td><input type="radio"></td>
+                    <td>1</td>
+                    <td>192.168.1.1</td>
+                    <td>1</td>
+                    <td>测试留言墙</td>
+                    <td>2015-10-13 20:25:37</td>
                     <td>
-                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
+                    <td><input type="radio"></td>
+                    <td>1</td>
+                    <td>192.168.1.1</td>
+                    <td>1</td>
+                    <td>测试留言墙</td>
+                    <td>2015-10-13 20:25:37</td>
                     <td>
-                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                   <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
+                    <td><input type="radio"></td>
+                    <td>1</td>
+                    <td>192.168.1.1</td>
+                    <td>1</td>
+                    <td>测试留言墙</td>
+                    <td>2015-10-13 20:25:37</td>
                     <td>
-                      <a href="javascript:;">更改权限</a>
                       <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
-                    <td>
-                      <a href="javascript:;">更改权限</a>
-                      <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
-                    <td>
-                      <a href="javascript:;">更改权限</a>
-                      <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
-                    </td>
-                  </tr>
-                  <tr class="gradeX">
-                    <td>13029803355</td>
-                    <td>13029803355.qq.com</td>
-                    <td>13029803355</td>
-                    <td>male</td>
-                    <td class="center">2015-9-27 14:16:34</td>
-                    <td>2015-10-05 11:51:19</td>
-                    <td>127.1.1.1</td>
-                    <td>张先生</td>
-                    <td>user</td>
-                    <td>1,1,1</td>
-                    <td>
-                      <a href="javascript:;">更改权限</a>
-                      <a href="javascript:;">删除</a>
-                      <a href="javascript:;">发通知给用户</a>
                     </td>
                   </tr>
                 </tbody>
@@ -312,7 +222,6 @@
   <script src="js/jquery.uniform.js"></script> 
   <script src="js/select2.min.js"></script> 
   <script src="js/matrix.js"></script> 
-  <script src="js/matrix.tables.js"></script>
 </body>
 
 </html>
