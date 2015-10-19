@@ -161,6 +161,19 @@ $(document).ready(function(){
 	$('#lightbox').live('click', function() { 
 		$('#lightbox').hide(200);
 	});
+
+	// === add file control === //
+	var num = 0;
+	$('#f-add').on('click',function(){
+		var $files = $('<input type="file"/>');
+		if( num == 7){
+			return false;
+		}else{
+			console.log(2);
+			$files.appendTo($('.f-files'));
+			num++;
+		}
+	});
 	
 });
 

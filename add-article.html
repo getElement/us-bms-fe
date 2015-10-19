@@ -11,7 +11,6 @@
   <link rel="stylesheet" href="css/uniform.css" />
   <link rel="stylesheet" href="css/jquery.gritter.css" />
   <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
-  <link rel="stylesheet" type="text/css" href="font-awesome/css/font-google-400.css" />
   <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
   <style type="text/css">
   @media (min-width: 1200px){
@@ -105,7 +104,7 @@
       </li>
       <li class="submenu"> <a href="see-notes.html"><i class="icon icon-pencil"></i> <span>留言板</span> <span class="label label-important">1</span></a>
         <ul>
-          <li><a href="#">查看留言板</a></li>
+          <li><a href="see-notes.html">查看留言板</a></li>
         </ul>
       </li>
       <li class="submenu active"> <a href="add-article.html"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
@@ -182,11 +181,11 @@
               </div>
               <div class="control-group">
                 <label class="control-label">上传文件</label>
-                <div class="controls">
-                  <input type="file" />
+                <div class="controls f-files">
+                  <input type="file"/>
                 </div>
                 <div class="controls">
-                  <button class="btn btn-success">增加一行</button>
+                  <input type="button" id="f-add" class="btn btn-success" value="增加一行"/>
                   <input type="submit" value="上传">
                 </div>
               </div>
