@@ -1,24 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>添加文章</title>
+  <title>修改权限</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="css/bootstrap.min.css" />
   <link rel="stylesheet" href="css/bootstrap-responsive.min.css" />
   <link rel="stylesheet" href="css/matrix-style.css" />
   <link rel="stylesheet" href="css/matrix-media.css" />
-  <link rel="stylesheet" href="css/uniform.css" />
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.css"/>
   <link rel="stylesheet" href="css/jquery.gritter.css" />
-  <link rel="stylesheet" href="css/bootstrap-wysihtml5.css" />
-  <link href="font-awesome/css/font-awesome.css" rel="stylesheet" />
-  <style type="text/css">
-  @media (min-width: 1200px){
-    .row-fluid{
-        padding-left: 20px;
-    } 
-  }
-  </style>
 </head>
 
 <body>
@@ -72,7 +63,7 @@
     <a href="#" class="visible-phone"><i class="icon icon-home"></i>menu</a>
     <ul>
       <li><a href="index.html"><i class="icon icon-home"></i> <span>首页</span></a> </li>
-      <li class="submenu"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
+      <li class="submenu active"> <a href="javascript:;"><i class="icon icon-th-list"></i> <span>校园生活</span> <span class="label label-important">4</span></a>
         <ul>
           <li><a href="college-joke.html">校园八卦</a></li>
           <li><a href="college-wind.html">校园风云</a></li>
@@ -107,7 +98,7 @@
           <li><a href="see-notes.html">查看留言板</a></li>
         </ul>
       </li>
-      <li class="submenu active"> <a href="add-article.html"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
+      <li class="submenu"> <a href="add-article.html"><i class="icon icon-file"></i> <span>文章</span> <span class="label label-important">1</span></a>
         <ul>
           <li><a href="add-article.html">添加文章</a></li>
         </ul>
@@ -119,70 +110,74 @@
   <div id="content">
     <!--breadcrumbs面包屑导航-->
     <div id="content-header">
-      <div id="breadcrumb"> 
-        <a href="index.html" title="回到主页" class="tip-bottom"><i class="icon-home"></i>主页</a> 
-        <a href="add-article.html" title="添加文章" class="tip-bottom" class="current">添加文章</a> 
+      <div id="breadcrumb">
+        <a href="index.html" title="返回主页" class="tip-bottom"><i class="icon-home"></i> Home</a><a href="#">修改权限</a>
       </div>
-      <h1>添加文章</h1>
     </div>
     <!--End-breadcrumbs-->
-    <div class="row-fluid">
-      <div class="span6">
-        <div class="widget-box">
-          <div class="widget-title"> <span class="icon"> <i class="icon-align-justify"></i> </span>
-            <h5>添加文章详情</h5>
-          </div>
-          <div class="widget-content nopadding">
-            <form action="#" method="get" class="form-horizontal">
-              <div class="control-group">
-                <label class="control-label">标题 :</label>
-                <div class="controls">
-                  <input type="text" class="span11" placeholder="标题" />
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">作者 :</label>
-                <div class="controls">
-                  <input type="text" class="span11" placeholder="作者" />
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">标签类型</label>
-                <div class="controls">
-                  <input type="text"  class="span11" placeholder=""  />
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">文章分类</label>
-                <div class="controls">
-                  <select >
-                    <option>--请选择--</option>
-                    <option>校园资讯</option>
-                    <option>校园风云</option>
-                    <option>校园八卦</option>
-                    <option>校园活动</option>
-                    <option>口碑商</option>
-                    <option>便生活</option>
-                    <option>有活动</option>
-                  </select>
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">文章类型:</label>
-                <div class="controls">
-                  <input type="text" class="span11" />
-                </div>
-              </div>
-              <div class="control-group">
-                <label class="control-label">文章摘要</label>
-                <div class="controls">
-                  <textarea class="span11" ></textarea>
-                </div>
-              </div>
-              <div class="form-actions text-right">
-                <input type="submit" class="btn btn-success" value="提交">
-              </div>
-            </form>
+    <div class="container-fluid">
+      <div class="widget-box">
+        <div class="widget-title"> <span class="icon"> <i class="icon-briefcase"></i> </span>
+          <h5>Company Name</h5>
+        </div>
+        <div class="widget-content">
+          <div class="row-fluid">
+            <div class="span6">
+              <table class="table table-bordered table-invoice">
+                <tbody>
+                  <tr>
+                  </tr><tr>
+                    <td class="width30">用户名</td>
+                    <td class="width70"><strong>张兆军</strong></td>
+                  </tr>
+                  <tr>
+                    <td>权限</td>
+                    <td>
+                      <form action="" method="POST" role="form" class="form-inline">
+                        <div class="form-group">
+                          <input name="leave" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发表留言</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="product" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布商品</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="gossip" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布校园八卦</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="situation" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布校园风云</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="sactivity" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布校园活动</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="information" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布校园资讯</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="reputation" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布口碑商</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="activity" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布有活动</label>
+                        </div>
+                        <div class="form-group">
+                          <input name="thenlife" type="checkbox" value="1" class="form-control check" id="">
+                          <label for="">发布便生活</label>
+                        </div>
+                        <input type="submit" class="btn btn-success" value="修改用户权限">
+                        <input type="button" value="返回" />
+                      </form>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
@@ -200,7 +195,6 @@
   <script src="js/jquery.uniform.js"></script> 
   <script src="js/select2.min.js"></script> 
   <script src="js/matrix.js"></script> 
-  <script src="js/jquery.peity.min.js"></script> 
 </body>
 
 </html>

@@ -1599,4 +1599,10 @@ div.dataTables_wrapper .ui-widget-header {
 }
 
 /*私有样式*/
+.row-fluid form .check{
+	height:16px;
+	width:16px;
+	opacity: 1;
+	border:1px solid #000;
+}
 
