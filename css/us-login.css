@@ -42,18 +42,18 @@ hr{ border-top-color:#dadada;}
 body { background-color:#2E363F;    padding: 0;  padding-top: 4%}
 #loginbox {    width: 32%; margin-left: auto; margin-right: auto; position: relative;}
 #logo img {  margin: 0 auto;    display: block;}
-#loginbox { overflow: hidden !important;    text-align: left;    position: relative; }
+#loginbox {   text-align: left;    position: relative; }
 #loginbox form{ width:100%; background:#2E363F; position:relative; top:0; left:0; }
 #loginbox .form-actions { padding: 14px 20px 15px;}
 #loginbox .form-actions .pull-left { margin-top:0px;}
 #loginbox form#loginform { z-index: 200; display:block;}
 #loginbox form#recoverform { z-index: 100;     display:none;}
 #loginbox form#recoverform .form-actions {    margin-top: 10px;}
-#loginbox .main_input_box { margin:0 auto; text-align:center; font-size:13px;}
+#loginbox .main_input_box { margin:0 auto; text-align:center; font-size:13px; position: relative;}
 #loginbox .main_input_box .add-on{  padding:9px 9px; *line-height:31px; color:#fff;  width:30px; display:inline-block;}
 #loginbox .main_input_box input{ height:30px; border:0px; display:inline-block; width:75%; line-height:28px;  margin-bottom:3px;}
 #loginbox .main_input_box .btn-login{ margin-right:20px; margin-top: 20px;}
-#loginbox .main-safe-code{ display:block; width:200px; line-height:31px; height:50px; border:1px solid red; margin-left:20px;}
+#loginbox .main-safe-code{ display:block; position:absolute; right:-80px; top:0; z-index:20000; width:80px; height:32px; line-height:31px;  border:1px solid red;}
 #loginbox .controls{ padding:0 20px;}
 #loginbox .control-group{ padding:20px 0; margin-bottom:0px;}
 .form-vertical{  margin-bottom: 0; background:none; border-top:1px solid #3f4954; border-bottom:1px solid #3f4954; margin-top: 20px; }
