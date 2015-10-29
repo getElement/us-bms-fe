@@ -52,10 +52,11 @@ body { background-color:#2E363F;    padding: 0;  padding-top: 4%}
 #loginbox .main_input_box { margin:0 auto; text-align:center; font-size:13px; position: relative;}
 #loginbox .main_input_box .add-on{  padding:9px 9px; *line-height:31px; color:#fff;  width:30px; display:inline-block;}
 #loginbox .main_input_box input{ height:30px; border:0px; display:inline-block; width:75%; line-height:28px;  margin-bottom:3px;}
+#loginbox .main_input_box	label{ padding:0 20px; width:100%; text-align: left; color:#fff;}
 #loginbox .main_input_box .btn-login{ margin-right:20px; margin-top: 20px;}
 #loginbox .main-safe-code{ display:block; position:absolute; right:-80px; top:0; z-index:20000; width:80px; height:32px; line-height:31px;  border:1px solid red;}
 #loginbox .controls{ padding:0 20px;}
-#loginbox .control-group{ padding:20px 0; margin-bottom:0px;}
+#loginbox .control-group{ padding:10px 0; margin-bottom:0px;}
 .form-vertical{  margin-bottom: 0; background:none; border-top:1px solid #3f4954; border-bottom:1px solid #3f4954; margin-top: 20px; }
 #loginbox .normal_text{ padding:15px 10px; text-align:center; font-size:14px; line-height:20px; background:#2E363F; color:#fff; }
 @media (max-width:800px){
